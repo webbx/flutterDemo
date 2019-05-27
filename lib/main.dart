@@ -23,22 +23,37 @@ class MyApp extends StatelessWidget {
 //                            decorationStyle: TextDecorationStyle.dashed
 //                        ),
 //                    ),
-                    child: Container(
-                        child: new Text('hello wangbo', style: TextStyle(fontSize: 25)),
-                        alignment: Alignment.topLeft,
-                        width: 500.0,
-                        height: 400.0,
-//                        color: Colors.lightBlue,
-                        // padding边距
-                        // padding: const EdgeInsets.fromLTRB(30.0, 20.0, 10.0, 20.0),
-                        padding: const EdgeInsets.all(30.0),
-                        margin: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
-                        decoration: new BoxDecoration(
-                            // 渐变色
-                            gradient: const LinearGradient(colors: [Colors.lightBlue, Colors.green, Colors.pink]),
-                            border: Border.all(width: 5.0, color: Colors.blue)
-                        ),
-                    )
+//                    child: Container(
+//                        child: new Text('hello wangbo', style: TextStyle(fontSize: 25)),
+//                        alignment: Alignment.topLeft,
+//                        width: 500.0,
+//                        height: 400.0,
+////                        color: Colors.lightBlue,
+//                        // padding边距
+//                        // padding: const EdgeInsets.fromLTRB(30.0, 20.0, 10.0, 20.0),
+//                        padding: const EdgeInsets.all(30.0),
+//                        margin: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
+//                        decoration: new BoxDecoration(
+//                            // 渐变色
+//                            gradient: const LinearGradient(colors: [Colors.lightBlue, Colors.green, Colors.pink]),
+//                            border: Border.all(width: 5.0, color: Colors.blue)
+//                        ),
+//                    )
+                child: Container(
+                    // image组件
+                    child: new Image.network(
+                        'https://avatars2.githubusercontent.com/u/26587649?s=460&v=4',
+                        // 图片显示方式
+                        fit: BoxFit.scaleDown,
+                        color: Colors.deepOrange,
+                        colorBlendMode: BlendMode.darken,
+                        repeat: ImageRepeat.repeat,
+                    ),
+                    width: 500.0,
+                    height: 500.0,
+                    color: Colors.lightBlue,
+                    
+                ),
                 )
             )
         );
