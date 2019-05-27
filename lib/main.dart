@@ -8,7 +8,8 @@ class MyApp extends StatelessWidget {
         return MaterialApp (
             title: 'Text Demo',
             home: Scaffold(
-                body: Center(
+                appBar: new AppBar(title: new Text('title')),
+//                body: Center(
 //                    child: Text(
 //                        'hello wang, like flutterhello wang, like flutterhello wang, like flutter',
 //                        textAlign: TextAlign.left,
@@ -39,23 +40,61 @@ class MyApp extends StatelessWidget {
 //                            border: Border.all(width: 5.0, color: Colors.blue)
 //                        ),
 //                    )
-                child: Container(
-                    // image组件
-                    child: new Image.network(
-                        'https://avatars2.githubusercontent.com/u/26587649?s=460&v=4',
-                        // 图片显示方式
-                        fit: BoxFit.scaleDown,
-                        color: Colors.deepOrange,
-                        colorBlendMode: BlendMode.darken,
-                        repeat: ImageRepeat.repeat,
+//                child: Container(
+//                    // image组件
+//                    child: new Image.network(
+//                        'https://avatars2.githubusercontent.com/u/26587649?s=460&v=4',
+//                        // 图片显示方式
+//                        fit: BoxFit.scaleDown,
+//                        color: Colors.deepOrange,
+//                        colorBlendMode: BlendMode.darken,
+//                        repeat: ImageRepeat.repeat,
+//                    ),
+//                    width: 500.0,
+//                    height: 500.0,
+//                    color: Colors.lightBlue,
+//                ))
+//            )
+//                body: new ListView(
+//                    children: <Widget>[
+//                        new ListTile(
+//                            leading: new Icon(Icons.perm_camera_mic),
+//                            title: new Text('perm_camera'),
+//                        ),
+//                        new ListTile(
+//                            leading: new Icon(Icons.access_alarm),
+//                            title: new Text('access_alarm'),
+//                        ),
+//                        new Image.network('https://avatars2.githubusercontent.com/u/26587649?s=460&v=4'),
+//                        new Image.network('https://avatars2.githubusercontent.com/u/26587649?s=460&v=4')
+//                    ],
+//                ),
+                body: Center(
+                    child: Container(
+                        height: 200.0,
+                        child: new ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: <Widget>[
+                                new Container(
+                                    width: 300.0,
+                                    color: Colors.lightBlue,
+                                ),
+                                new Container(
+                                    width: 300.0,
+                                    color: Colors.green,
+                                ),
+                                new Container(
+                                    width: 300.0,
+                                    color: Colors.pink,
+                                ),
+                                new Container(
+                                    width: 300.0,
+                                    color: Colors.blue,
+                                )
+                            ],
+                        ),
                     ),
-                    width: 500.0,
-                    height: 500.0,
-                    color: Colors.lightBlue,
-                    
                 ),
-                )
-            )
         );
     }
 }
