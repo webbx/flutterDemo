@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
                 appBar: new AppBar(title: new Text('导航首页')),
                 body: Center(
                     child: RaisedButton(
-                        child: new Text('跳转'),
+                        child: new Text('下一页'),
                         onPressed: (){
                             Navigator.push(context, MaterialPageRoute(builder: (context) => new ListViewDynamic()));
                         }
