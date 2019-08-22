@@ -36,9 +36,6 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> with Si
     // 列表
     List<Widget> list = List();
     final _BottomNavigationWidgetColor = Colors.blue;
-    
-    
-
     // 充重写initState方法
     @override
     void initState() {
