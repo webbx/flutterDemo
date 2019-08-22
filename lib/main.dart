@@ -9,11 +9,13 @@ void main() {
 class FirstPage extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
-        return Scaffold(
-            appBar: new AppBar(title: new Text('点击获取子数据')),
-            body: new Center(
-                child: RouteButton()
-            ),
+        return MaterialApp(
+            home: Scaffold(
+                appBar: new AppBar(title: new Text('点击获取子数据')),
+                body: new Center(
+                    child: RouteButton()
+                )
+            )
         );
     }
 }
