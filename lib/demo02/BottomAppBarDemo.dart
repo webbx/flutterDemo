@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/demo01/pages/Home.dart';
 import './EachView.dart';
+import './NextPage.dart';
 class BottomAppBarDemo extends StatefulWidget {
     @override
     _BottomAppBarDemoState createState() => _BottomAppBarDemoState();
@@ -27,7 +27,7 @@ class _BottomAppBarDemoState extends State<BottomAppBarDemo> {
                 onPressed: () => {
                     // 新增一个路由，进行页面跳转
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
-                        return EachView('new page');
+                        return NextPage();
                     }))
                 },
                 tooltip: '新增',
